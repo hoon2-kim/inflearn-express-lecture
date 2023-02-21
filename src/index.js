@@ -12,11 +12,7 @@ import { jwtAuth } from "./middleware";
     await database.$connect();
 
     // middleware
-    app.use(
-        cors({
-            origin: "*",
-        })
-    );
+    app.use(cors());
     app.use(helmet());
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
