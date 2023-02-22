@@ -15,14 +15,6 @@ import { jwtAuth } from "./middleware";
     app.use(
         cors({
             origin: "*",
-            credentials: true,
-            allowedHeaders: [
-                "Access-Control-Allow-Origin",
-                "Authorization",
-                "X-Requested-With",
-                "Content-Type",
-                "Accept",
-            ],
         })
     );
     app.use(helmet());
